@@ -13,8 +13,8 @@ def subtracao (a, b):
 def soma (a, b):
   return a + b
 
-a = int(input("Digite o primeiro valor"))
-b = int(input ("Digite o segundo valor"))
+a = int(input("Digite o primeiro valor: "))
+b = int(input ("Digite o segundo valor: "))
 
 operacao = input("+: Soma\n-: Subtração\n*: Multiplicação\n/: Divisão\n**: Exponenciação")
 if operacao == '+':
