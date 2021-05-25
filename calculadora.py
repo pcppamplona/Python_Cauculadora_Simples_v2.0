@@ -1,3 +1,15 @@
+def potencia (a, b):
+  pass
+
+def divisao (a, b):
+  pass
+
+def multiplicacao (a, b):
+  pass
+
+def subtracao (a, b):
+  pass
+
 def soma (a, b):
   return a + b
 
