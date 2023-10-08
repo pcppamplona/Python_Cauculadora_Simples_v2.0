@@ -1,30 +1,44 @@
-def potencia (a, b):
-  pass
 
-def divisao (a, b):
-  pass
+def potencia(a: int, b: int):
+  return a ** b
 
-def multiplicacao (a, b):
-  pass
 
-def subtracao (a, b):
+def divisao(a: int, b: int):
+  return a / b
+
+
+def multiplicacao(a: int, b: int):
+  return a * b
+
+
+def subtracao(a: int, b: int):
   return a - b
 
-def soma (a, b):
+
+def soma(a: int, b: int):
   return a + b
 
-a = int(input("Digite o primeiro valor: "))
-b = int(input ("Digite o segundo valor: "))
 
-operacao = input("+: Soma\n-: Subtração\n*: Multiplicação\n/: Divisão\n**: Exponenciação")
+a = int(input("Digite o primeiro valor: "))
+operacao = input("+: Soma\n-: Subtração\n*: Multiplicação\n/: Divisão\n**: Exponenciação..:")
+b = int(input("Digite o segundo valor: "))
+
 if operacao == '+':
   resultado = soma(a, b)
+
 elif operacao == '-':
   resultado = subtracao(a, b)
+
 elif operacao == '*':
-  resultado = a * b
+  resultado = multiplicacao(a, b)
+
 elif operacao == '/':
-  resultado = a // b
+  resultado = divisao(a, b)
+
+elif operacao == '**':
+  resultado = potencia(a, b)
+
 else:
-  resultado = a ** b
+  print('operador nao reconhecido')
+
 print (resultado)
